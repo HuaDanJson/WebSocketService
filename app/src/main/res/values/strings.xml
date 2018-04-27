@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WebSocketService</string>
+
+    <string name="friends_textbox_default_des">Sending message&#8230;</string>
+</resources>

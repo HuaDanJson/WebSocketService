@@ -1,0 +1,46 @@
+<LinearLayout
+    android:id="@+id/ll_message_main_activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black80"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_message_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/ll_chat_message_input_bar_text_chat_fragment"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ll_input_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/text_chat_edit_text_bg_color"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_input_message_main_activity"
+            style="@style/TextStyleRobotoMedium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/friends_textbox_default_des"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white25"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+</LinearLayout>
+

@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity implements WebsocketServer.W
                     public void run() {
                         if (messageAdapter != null) {
                             messageAdapter.notifyDataSetChanged();
+                            mRecyclerView.smoothScrollToPosition((messageAdapter.getItemCount() - 1));
                         }
                     }
                 });
